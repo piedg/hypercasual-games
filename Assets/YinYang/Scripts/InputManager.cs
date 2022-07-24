@@ -11,7 +11,16 @@ namespace YinYang
         Touch touch;
         float halfScreenWidth = Screen.width / 2;
 
+        Vector3 direction;
+
         void Update()
+        {
+            TouchInput();
+
+            transform.Rotate(direction * turnSpeed * Time.deltaTime);
+        }
+
+        void TouchInput()
         {
             if (!EventSystem.current.IsPointerOverGameObject(touch.fingerId))
             {
@@ -24,12 +33,11 @@ namespace YinYang
                         Vector3 touchPosition = Input.touches[i].position;
 
                         if (touchPosition.x < halfScreenWidth)
-                            transform.Rotate(Vector3.forward * turnSpeed * Time.deltaTime);
+                            direction = Vector3.forward;
                         else
-                            transform.Rotate(Vector3.back * turnSpeed * Time.deltaTime);
-
+                            direction = Vector3.back;
                         if (touch.phase == TouchPhase.Ended)
-                            transform.Rotate(Vector3.zero);
+                            direction = Vector3.zero;
                     }
                 }
             }
