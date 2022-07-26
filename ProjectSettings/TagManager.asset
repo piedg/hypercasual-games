@@ -7,6 +7,11 @@ TagManager:
   - Red
   - Blue
   - Death
+  - Food
+  - Malus
+  - ScorePoint
+  - Obstacles
+  - Spawner
   layers:
   - Default
   - TransparentFX

@@ -10,6 +10,7 @@ namespace YinYang
         [SerializeField] List<GameObject> cubesPrefab;
 
         Vector2 minBounds, maxBounds;
+        float offSet = 2f;
 
         private void Start()
         {
@@ -23,7 +24,7 @@ namespace YinYang
             while (true)
             {
 
-                Vector3 spawnPosition = new Vector3(Random.Range(-1f, 1f), maxBounds.y);
+                Vector3 spawnPosition = new Vector3(Random.Range(-1f, 1f), maxBounds.y + offSet);
                 Instantiate(GetRandomCubes(), 
                 spawnPosition,
                 Quaternion.identity);
