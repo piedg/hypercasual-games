@@ -5,9 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public void PlayFlappyBird()
+    public void PlayFlyingFurry()
     {
-        SceneManager.LoadScene("FlappyBird");
+        SceneManager.LoadScene("FlyingFurry");
     }
 
     public void PlayYinYang()

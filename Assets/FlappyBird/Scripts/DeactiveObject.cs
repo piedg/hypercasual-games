@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace FlappyBird
+namespace FlyingFurry
 {
     public class DeactiveObject : MonoBehaviour
     {

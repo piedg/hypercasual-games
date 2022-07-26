@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: a5ace7f7dbcfced43936ba7fc124bab9
   - enabled: 1
-    path: Assets/Scenes/FlappyBird.unity
+    path: Assets/Scenes/FlyingFurry.unity
     guid: af85812e4e3d19243b267535b1bfca53
   - enabled: 1
     path: Assets/Scenes/YinYang.unity

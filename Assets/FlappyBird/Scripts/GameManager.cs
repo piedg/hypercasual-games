@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 
-namespace FlappyBird
+namespace FlyingFurry
 {
     public class GameManager : MonoBehaviour
     {
